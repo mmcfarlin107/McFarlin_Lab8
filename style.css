@@ -1,0 +1,23 @@
+body{
+  background-image: url('images/fruits.jpg');
+  text-align: center;
+}
+#container{
+  height: 500px;
+  width: 500px;
+}
+
+header {
+  background-color: white;
+}
+#groceryList{
+  height: 70%;
+  width: 100%;
+  background-color: rgba(230,230,230,1);
+}
+
+#total{
+  height:10%;
+  width: 100%;
+  background-color: red;
+}

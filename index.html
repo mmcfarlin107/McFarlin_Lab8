@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link href="style.css" rel="stylesheet" />
+
+</head>
+
+<body>
+  <div id="container">
+    <header>
+      <h1> What are you buying today? </h1>
+      <form>
+        <label for="fruit"> Item: </label> <input type="text" id="fruit">
+        <br />
+        <label for="price"> Price: </label> <input type="text" id="price">
+        </br>
+        <button type="button" onclick="add()"> Add </button>
+      </form>
+    </header>
+    <!-- grocery items div-->
+    <div id="groceryList">
+      <ul id="list">
+      </ul>
+    </div>
+    <!-- total div -->
+    <div id="total">
+    </div>
+  </div>
+
+  <!-- leave script at bottom -->
+  <script src=domManipulation.js></script>
+</body>
+
+</html>
