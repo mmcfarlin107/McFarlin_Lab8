@@ -26,9 +26,9 @@ var total = null;
 // for loop that creates the grocery list user sees to start
 for(i=0; i < groceries.length; i++){
   var listItem = document.createElement('li');
-  listItem.innerText = "Item: " + groceries[i].name + "..." + "Price: " + groceries[i].price + "..." + "Tax: " + (parseInt(groceries[i].price) *.06);
+  listItem.innerText = "Item: " + groceries[i].name + "..." + "Price: " + groceries[i].price + "..." + "Tax: " + (parseFloat(groceries[i].price) *.06);
   grabList.appendChild(listItem);
-  total += (parseInt(groceries[i].price) * 1.06);
+  total += (parseFloat(groceries[i].price) * 1.06);
 }
 
 // displays the total the user sees to start
@@ -42,7 +42,7 @@ grabTotal.appendChild(priceDisplayed);
 function add(){
   //making variables needed
   var fruitName = document.getElementById('fruit').value;
-  var fruitPrice = parseInt(document.getElementById('price').value);
+  var fruitPrice = parseFloat(document.getElementById('price').value);
   var fruitTax = fruitPrice * .06
   var fruitObject = {
     name: fruitName,
